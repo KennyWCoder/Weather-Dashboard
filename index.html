@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+    <header>Weather Dashboard</header>
+    <main class="d-flex flex-row justify-space-between">
+        <div id="search-card" class="col-12 col-md-3">
+            <div class="first-search-card">
+                <h2 class="search-title">Search for a city:</h1>
+                    <form id="search-form">
+                        <input id="search-input" class="form-input w-100 form-control-lg" type="text"
+                            placeholder="Seattle">
+                        <button class="btn btn-info btn-block">Search</button>
+
+                    </form>
+            </div>
+            <div>
+                <!-- For search history button -->
+            </div>
+        </div>
+
+        <div id="selected-city" class="col-12 col-md-9">
+
+            <div class="card" style="border: 3px solid black;">
+                <h2>City</h2>
+                <ul>
+                    <li>Temp: <span class="current-temp"></span></li>
+                    <li>Wind: <span class="current-wind"></span></li>
+                    <li>Humidity: <span class="current-humidity"></span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>5-Day Forecast</h2>
+                <div class="weather-forcast"></div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="/index.html"></script>
+</body>
+
+</html>

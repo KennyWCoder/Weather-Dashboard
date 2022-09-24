@@ -1,0 +1,43 @@
+*{
+
+}
+header {
+    background-color: rgb(64, 0, 128);
+
+    font-size:30px;
+    font-weight: bolder;
+    color: white;
+    padding: 1% 25% 1% 0;
+    text-align: right;
+}
+
+.btn {
+    text-align: center;
+    display: inline-block;
+}
+
+.btn.btn-block {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: rgb(98, 43, 226);
+    color: #ffffff;
+}
+
+.search-title, .form-input, .btn-block{
+    margin: 3% 3% 3% 0;
+}
+
+#search-card{
+    margin: 0 3% 0 2%;
+}
+
+.first-search-card{
+    border-bottom-style: solid;
+}
+
+.card {
+    margin: 3% 5% 3% 0;
+    width: 80%;
+    padding-left: 1%;
+}
