@@ -2,7 +2,7 @@
 
 ## Description
 
-Weather-Dashboard
+Weather-Dashboard to show selected City's current weather and display the following 5 days forecast.
 
 ## Installation
 
@@ -15,6 +15,9 @@ N/A
 ## Link to the Website
 
 https://kennywcoder.github.io/Weather-Dashboard/
+
+## Credits
+OpenWeatherApi - https://openweathermap.org/
 
 ## License
 

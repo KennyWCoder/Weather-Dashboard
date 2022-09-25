@@ -11,6 +11,13 @@ header {
     text-align: right;
 }
 
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100px;
+    height: 100px;
+    margin-left: 2%;
+}
 .btn {
     text-align: center;
     display: inline-block;
@@ -40,4 +47,15 @@ header {
     margin: 3% 5% 3% 0;
     width: 80%;
     padding-left: 1%;
+    padding-top: 1%;
+}
+
+.forecast-row {
+    width: 80%;
+}
+
+.weather-forecast {
+    margin: 2% 1.5%;
+    background-color: rgb(95, 72, 146);
+    color:#ffffff;
 }
