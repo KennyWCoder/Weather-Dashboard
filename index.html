@@ -19,35 +19,43 @@
                 <h2 class="search-title">Search for a city:</h1>
                     <form id="search-form">
                         <input id="search-input" class="form-input w-100 form-control-lg" type="text"
-                            placeholder="Seattle">
+                            placeholder="Enter a City">
                         <button class="btn btn-info btn-block">Search</button>
 
                     </form>
             </div>
             <div>
                 <!-- For search history button -->
+                <form id="search-history"></form>
             </div>
         </div>
 
-        <div id="selected-city" class="col-12 col-md-9">
+        <div id="city-weather" class="col-12 col-md-9 d-none">
 
             <div class="card" style="border: 3px solid black;">
-                <h2>City</h2>
+                <h2 id="selected-city">City</h2>
                 <ul>
-                    <li>Temp: <span class="current-temp"></span></li>
-                    <li>Wind: <span class="current-wind"></span></li>
-                    <li>Humidity: <span class="current-humidity"></span></li>
+                    <p id="current-temp"></p>
+                    <p id="current-wind"></p>
+                    <p id="current-humidity"></p>
                 </ul>
             </div>
 
-            <div>
+            <div class="row col-12">
                 <h2>5-Day Forecast</h2>
-                <div class="weather-forcast"></div>
-                
             </div>
+            <div class="row">
+                <div class="col-md-2 weather-forcast border rounded">hi</div>
+                <div class="col-md-2 weather-forcast border rounded">hi</div>
+                <div class="col-md-2 weather-forcast border rounded">hi</div>
+                <div class="col-md-2 weather-forcast border rounded">hi</div>
+                <div class="col-md-2 weather-forcast border rounded">hi</div>
+            </div>
+
+        </div>
         </div>
     </main>
-    <script src="/index.html"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
