@@ -75,6 +75,10 @@ function getWeatherInfo(cityName) {
             currentWind.innerHTML = "Wind: " + (Math.round(2.23694 * data.wind.speed * 100) / 100) + " MPH";
             currentHumid.innerHTML = "Humidity: " + data.main.humidity + " %";
         })
+        .catch(function(error) {
+            alert("Please enter a valid city name");
+            return;
+        })
     //request forecast api
     var requestForecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey;
     fetch(requestForecastUrl)
@@ -85,7 +89,7 @@ function getWeatherInfo(cityName) {
             console.log(data);
             for (i = 0; i < forecastWeather.length; i++) {
                 forecastWeather[i].innerHTML = "";
-                //because the open weather report show every 3 hours for the 5 days forecast, 3 * 8 = 24 + 4 last hours for the day
+                //because the open weather report show every 3 hours for the 5 days forecast, 3 * 8 = 24 + 4 add 4 to nav to 12 noon
                 var forecastList = i * 8 + 4;
                 //create forecast Date's card
                 var forecastDate = new Date(data.list[forecastList].dt * 1000);
